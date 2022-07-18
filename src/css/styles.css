@@ -48,6 +48,12 @@ body {
   border-radius: 11px;
 }
 
+.card-two {
+  padding: 40px;
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 11px;
+}
+
 .card-header {
   display: flex;
   justify-content: start;
@@ -58,6 +64,10 @@ body {
 .image img {
   border-radius: 50%;
   border: 3px solid hsl(263, 63%, 66%);
+}
+
+.img-two img {
+  border: none;
 }
 
 .card-titles {
