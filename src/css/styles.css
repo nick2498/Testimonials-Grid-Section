@@ -124,6 +124,12 @@ body {
   opacity: 0.5;
 }
 
+.card-one .title,
+.card-one .sub-title {
+  position: relative;
+  z-index: 1;
+}
+
 .text {
   position: relative;
   font-size: 25px;
@@ -151,10 +157,70 @@ body {
 /* Media Queries */
 /* Desktop */
 @media (max-width: 1440px) {
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: "one one one one two five" "three four four four four five";
+    padding: 8rem;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four,
+  .card-five {
+    padding: 30px;
+    padding-top: 25px;
+  }
+
+  .card-one .title,
+  .card-one .sub-title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-header {
+    margin-bottom: 15px;
+  }
+
+  .background-image {
+    right: 56px;
+    top: -25px;
+    width: 122px;
+  }
+
+  .image img {
+    width: 40px;
+  }
+
+  .img-border img {
+    width: 37px;
+  }
+
+  .card-titles {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .sub-title {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+
+  .sub-text {
+    font-size: 14.5px;
+  }
 }
 
 /* Mobile */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .cards {
     display: grid;
     gap: 1.5rem;
@@ -174,8 +240,8 @@ body {
     margin-bottom: 10px;
   }
 
-  .title,
-  .sub-title {
+  .card-one .title,
+  .card-one .sub-title {
     position: relative;
     z-index: 1;
   }
