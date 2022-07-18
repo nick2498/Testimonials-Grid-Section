@@ -54,6 +54,12 @@ body {
   border-radius: 11px;
 }
 
+.card-three {
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 11px;
+}
+
 .card-header {
   display: flex;
   justify-content: start;
@@ -64,15 +70,20 @@ body {
 .image img {
   border-radius: 50%;
   border: 3px solid hsl(263, 63%, 66%);
+  width: 50px;
 }
 
-.img-two img {
+.img-border img {
   border: none;
 }
 
 .card-titles {
   margin-left: 20px;
   color: var(--light-gray);
+}
+
+.title-light {
+  color: var(--very-dark-grayish-blue);
 }
 
 .title {
@@ -93,9 +104,17 @@ body {
   margin-bottom: 15px;
 }
 
+.body-light .text {
+  color: var(--very-dark-grayish-blue);
+}
+
 .sub-text {
   font-size: 16px;
   color: var(--light-gray);
   opacity: 0.7;
   font-weight: 500;
+}
+
+.body-light .sub-text {
+  color: var(--very-dark-grayish-blue);
 }
