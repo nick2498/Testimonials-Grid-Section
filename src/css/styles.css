@@ -37,7 +37,6 @@ body {
 .cards {
   display: grid;
   gap: 2rem;
-  /* grid-auto-columns: 1fr; */
   grid-template-areas: "one one one one two five" "three four four four four five";
   padding: 6.5rem 17.5rem;
 }
@@ -147,4 +146,72 @@ body {
 
 .body-light .sub-text {
   color: var(--very-dark-grayish-blue);
+}
+
+/* Media Queries */
+/* Desktop */
+@media (max-width: 1440px) {
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: "one" "two" "three" "four" "five";
+    padding: 60px 25px;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four,
+  .card-five {
+    padding: 30px;
+  }
+
+  .card-header {
+    margin-bottom: 10px;
+  }
+
+  .title,
+  .sub-title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .background-image {
+    right: 0;
+    top: -30px;
+    width: 115px;
+  }
+
+  .image img {
+    width: 35px;
+  }
+
+  .img-border img {
+    width: 32px;
+  }
+
+  .title {
+    font-size: 16.5px;
+  }
+
+  .sub-title {
+    font-size: 14px;
+  }
+
+  .card-titles {
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .text {
+    font-size: 20.5px;
+  }
+
+  .sub-text {
+    font-size: 14px;
+  }
 }
