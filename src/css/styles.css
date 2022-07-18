@@ -31,47 +31,59 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
 }
 
 .cards {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
   /* grid-auto-columns: 1fr; */
-  grid-template-areas: "one" "two" "three" "four" "five";
-  padding: 9rem;
-  /* max-width: 100%; */
+  grid-template-areas: "one one one one two five" "three four four four four five";
+  padding: 6.5rem 17.5rem;
 }
 
 .card-one {
+  grid-area: one;
   padding: 40px;
   background-color: var(--moderate-violet);
   border-radius: 11px;
 }
 
 .card-two {
+  grid-area: two;
   padding: 40px;
   background-color: var(--very-dark-grayish-blue);
   border-radius: 11px;
 }
 
-.card-three,
-.card-five {
+.card-three {
+  grid-area: three;
   padding: 40px;
   background-color: var(--white);
   border-radius: 11px;
+  box-shadow: 10px 10px 20px 0 rgb(0, 0, 0, 0.06);
 }
 
 .card-four {
+  grid-area: four;
   padding: 40px;
   background-color: var(--very-dark-blackish-blue);
   border-radius: 11px;
 }
 
+.card-five {
+  grid-area: five;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 11px;
+  box-shadow: 10px 10px 20px 0 rgb(0, 0, 0, 0.06);
+}
+
 .card-header {
   display: flex;
-  justify-content: start;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .image img {
@@ -82,10 +94,19 @@ body {
 
 .img-border img {
   border: none;
+  width: 47px;
+}
+
+.background-image {
+  position: absolute;
+  right: 57px;
+  top: -40px;
+  width: 153px;
+  z-index: inherit;
 }
 
 .card-titles {
-  margin-left: 20px;
+  margin-left: 25px;
   color: var(--light-gray);
 }
 
@@ -94,21 +115,23 @@ body {
 }
 
 .title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: normal;
 }
 
 .sub-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   opacity: 0.5;
 }
 
 .text {
+  position: relative;
   font-size: 25px;
   font-weight: normal;
   color: var(--white);
   margin-bottom: 15px;
+  z-index: 999;
 }
 
 .body-light .text {
