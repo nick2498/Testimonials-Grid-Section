@@ -156,7 +156,7 @@ body {
 
 /* Media Queries */
 /* Desktop */
-@media (max-width: 1440px) {
+@media (max-width: 1440px), (min-width: 1441px) {
   .cards {
     display: grid;
     gap: 1.5rem;
@@ -219,8 +219,31 @@ body {
   }
 }
 
+@media (max-width: 1100px) {
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: "one one one one two two" "three three four four four four" "five five five five five five";
+    padding: 4rem;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four,
+  .card-five {
+    padding: 30px;
+  }
+
+  .background-image {
+    right: 0;
+    top: -30px;
+    width: 115px;
+  }
+}
+
 /* Mobile */
-@media (max-width: 376px) {
+@media (max-width: 376px), (max-width: 700px) {
   .cards {
     display: grid;
     gap: 1.5rem;
