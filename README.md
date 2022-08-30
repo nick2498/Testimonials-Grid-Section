@@ -24,3 +24,6 @@ A responsive testimonials grid section built using HTML, CSS, and CSS Grid.
 ## License📄
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Website Preview🖥️
+![Alt](https://github.com/nick2498/Testimonials-Grid-Section/blob/master/src/images/website-screenshot.png)
